@@ -1,0 +1,39 @@
+
+Deprecated: The each() function is deprecated. This message will be suppressed on further calls in C:\Users\THIEN\AppData\Roaming\Sublime Text 3\Packages\PHPTools\php.tools\codeFormatter.php on line 54
+<form action="login_dologin.php" method="post">
+	<table>
+		<tr>
+			<td colspan="2">
+<?php
+if (isset($_SESSION['flash'])) {
+	echo $_SESSION['flash'];
+} else {
+	'Nhập thông tin đăng nhập';
+}
+
+unset($_SESSION['flash']);
+?>
+</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td>
+				<input type="text" name="email">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Mat khau
+			</td>
+			<td>
+				<input type="password" name="password">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" name="submit">
+			</td>
+
+		</tr>
+	</table>
+</form>
